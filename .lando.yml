@@ -1,0 +1,52 @@
+name: lando-wordpress-env
+recipe: wordpress
+config:
+  php: '7.4'
+  via: nginx
+  webroot: public
+  xdebug: true
+  conf:
+    php: config/php.ini
+    server: config/nginx.conf
+    params: config/params
+# proxy:
+#   mailhog:
+#     - mail.lando-wordpress-env.lndo.site
+#   pma:
+#     - db.lando-wordpress-env.lndo.site
+services:
+  node:
+    type: node
+    globals:
+      gulp-cli: latest
+  mailhog:
+    type: mailhog
+    hogfrom:
+      - appserver
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+  database:
+    type: mysql:5.7
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  gulp:
+    service: node
+  yarn:
+    service: node
+  php:
+    service: appserver
+proxy:
+  # Appserver_nginx or appserver for apache
+  # appserver:
+  #   - lando-wordpress-env.lndo.site
+  appserver_nginx:
+    - lando-wordpress-env.lndo.site
+  mailhog:
+    - mail.lando-wordpress-env.lndo.site
+  pma:
+    - pma.lando-wordpress-env.lndo.site
