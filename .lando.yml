@@ -1,7 +1,7 @@
 name: lando-wordpress-env
 recipe: wordpress
 config:
-  php: '7.4'
+  php: '8.1'
   via: nginx
   webroot: public
   xdebug: true
@@ -9,11 +9,6 @@ config:
     php: config/php.ini
     server: config/nginx.conf
     params: config/params
-# proxy:
-#   mailhog:
-#     - mail.lando-wordpress-env.lndo.site
-#   pma:
-#     - db.lando-wordpress-env.lndo.site
 services:
   node:
     type: node
