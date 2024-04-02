@@ -83,7 +83,9 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 # /wp-content/plugins/akismet*
 
 # wp-content directory
-/wp-content/updraft
+wp-content/mu-plugins
+wp-content/updraft
+
 
 # ignore all themes
 wp-content/themes/*
@@ -95,7 +97,6 @@ wp-content/themes/sage/composer.lock
 
 # ignore all plugins
 wp-content/plugins/*
-wp-content/mu-plugins
 # except for these
 !wp-content/plugins/miketurnertest-custom
 # ignore these plugin files
