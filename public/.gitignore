@@ -6,6 +6,7 @@
 *.swp
 Thumbs.db
 favicon.ico
+apple-touch*
 database.sql
 debug.log
 
