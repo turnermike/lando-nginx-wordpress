@@ -11,8 +11,7 @@ database.sql
 debug.log
 
 # wordpress specific
-wp-config.php
-wp-config.php.*
+wp-config*
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
