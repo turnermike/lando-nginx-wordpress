@@ -33,7 +33,10 @@ export default async (app) => {
    * @see {@link https://bud.js.org/reference/bud.watch}
    */
   app
-    .setUrl('http://localhost:3000')
+    // .setUrl('http://localhost:3000')
+    // .setProxyUrl('http://example.test')
+    // .watch(['resources/views', 'app']);
+    .setUrl('http://lando-wordpress-env.lndo.site/')
     .setProxyUrl('http://example.test')
     .watch(['resources/views', 'app']);
 
