@@ -1,0 +1,19 @@
+[02-Apr-2024 14:41:21 UTC] PHP Warning:  Use of undefined constant WPE_APIKEY - assumed 'WPE_APIKEY' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 787
+[02-Apr-2024 14:41:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 14:41:22 UTC] PHP Warning:  Use of undefined constant PWP_NAME - assumed 'PWP_NAME' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 14:41:22 UTC] PHP Warning:  Use of undefined constant WPE_APIKEY - assumed 'WPE_APIKEY' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:04:44 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:04:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:07:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:07:24 UTC] PHP Warning:  Use of undefined constant WPE_APIKEY - assumed 'WPE_APIKEY' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 787
+[02-Apr-2024 15:07:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:07:25 UTC] PHP Warning:  Use of undefined constant PWP_NAME - assumed 'PWP_NAME' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:07:25 UTC] PHP Warning:  Use of undefined constant WPE_APIKEY - assumed 'WPE_APIKEY' (this will throw an Error in a future version of PHP) in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:08:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:08:44 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:08:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:08:58 UTC] auditor:event=profile_update {"user_id":1,"blog_id":1,"event":"profile_update","current_user_id":1,"remote_addr":"172.23.0.2"}
+[02-Apr-2024 15:08:59 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 15:48:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 16:04:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
+[02-Apr-2024 16:04:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /app/public/wp-content/mu-plugins/wpengine-common/plugin.php on line 770
