@@ -66,10 +66,22 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 /wp-admin
 /wp-includes
 /wp-content/index.php
+# /wp-content/themes/twentyten
+# /wp-content/themes/twentyeleven
+# /wp-content/themes/twentytwelve
+# /wp-content/themes/twentythirteen
+# /wp-content/themes/twentyfourteen
+# /wp-content/themes/twentyfifteen
+# /wp-content/themes/twentysixteen
+# /wp-content/themes/twentyseventeen
+# /wp-content/themes/twentyeighteen
+# /wp-content/themes/twentynineteen
+# /wp-content/themes/twentytwenty
 /wp-content/themes/index.php
 /wp-content/plugins/index.php
+# /wp-content/plugins/akismet*
 
-# wp-content directories
+# wp-content directory
 /wp-content/updraft
 
 # ignore all themes
@@ -78,6 +90,7 @@ wp-content/themes/*
 !wp-content/themes/sage
 # ignore these theme files
 wp-content/themes/sage/composer.lock
+
 
 # ignore all plugins
 wp-content/plugins/*
