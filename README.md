@@ -4,6 +4,8 @@
 
 Test Git access: `ssh git@git.wpengine.com info`. Should return a list of available environments and their permissions.
 
+Old: git@bitbucket.org:Hi-hatConsulting/lando-nginx-wordpress.git
+
 # Lando
 
 We're using Lando to manage Docker containers for a local hosting environment.
