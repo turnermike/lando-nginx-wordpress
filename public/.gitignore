@@ -12,6 +12,7 @@ debug.log
 
 # wordpress specific
 wp-config.php
+wp-config.php.*
 wp-content/uploads/
 wp-content/blogs.dir/
 wp-content/upgrade/*
@@ -81,19 +82,26 @@ wp-content/mu-plugins/wpe-wp-sign-on-plugin*
 /wp-content/plugins/index.php
 # /wp-content/plugins/akismet*
 
+# wp-content directory
+/wp-content/updraft
+
 # ignore all themes
 wp-content/themes/*
 # except for this one
-!wp-content/themes/miketurnertest
-wp-content/themes/miketurnertest/composer.lock
-wp-content/plugins/miketurnertest-custom/cache/
-wp-content/plugins/miketurnertest-custom/location/IP-COUNTRY-REGION-CITY.BIN
-wp-content/plugins/miketurnertest-custom/location/IPV6-COUNTRY-REGION-CITY.BIN
+!wp-content/themes/sage
+# ignore these theme files
+wp-content/themes/sage/composer.lock
+
 
 # ignore all plugins
 wp-content/plugins/*
+wp-content/mu-plugins
 # except for these
 !wp-content/plugins/miketurnertest-custom
+# ignore these plugin files
+wp-content/plugins/miketurnertest-custom/cache/
+wp-content/plugins/miketurnertest-custom/location/IP-COUNTRY-REGION-CITY.BIN
+wp-content/plugins/miketurnertest-custom/location/IPV6-COUNTRY-REGION-CITY.BIN
 
 # large/disallowed file types
 # a CDN should be used for these
