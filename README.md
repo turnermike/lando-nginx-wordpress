@@ -1,47 +1,49 @@
-# Lando WordPress Environment
-This is a WordPress development environment based on Lando which I use for my WordPress projects. It allows for core development, plugin development, and theme development. 
-[Lando](https://github.com/lando/lando) is an extremely flexible local development environment that is based on [Docker](https://www.docker.com/).
+# WPEngine
 
-This repository contains the Lando configuration file `.lando.yml` along with `config/php.ini` `config/nginx.conf` `config/httpd.conf` files for server configuration.
+# Lando
 
-## Getting started
-Before you get started with this setup I assume that you have:
-1. Installed [Lando](https://github.com/lando/lando) and gotten familiar with its basics
-1. Got familiar with Lando's [WordPress recipe](https://docs.lando.dev/config/wordpress.html)
-1. Read about the various services, tooling, events and routing Lando offers.
+We're using Lando to manage Docker containers for a local hosting environment.
 
-## Usage  
-1. Configure `.lando.yml`  and replace `{project}` with project name
-1. Specify the desired PHP version, web server and database server
-1. Run the command `lando start` from the project root.
-1. Create WordPress folder with `mkdir wordpress` and move into it by `cd wordpress`
-1. Download WordPress with WP CLI by `lando wp core download` 
-1. Then visit the WordPress folder (`wp-{project}.lndo.site/wordpress/`) and go through install steps
+## Configuration Steps
 
-## Info
-Lando will automatically set up a database with a user and password and also set an environment variables called `lando info` that contains useful information about how your application can access other Lando services.
-``` 
-database: wordpress
-username: wordpress
-password: wordpress
-host: database
-# for mysql
-port: 3306
-# for postgres
-# port: 5432
-```
-Go to `pma.wp-{project}.lndo.site` to visit PHPMyAdmin and `mail.wp-{project}.lndo.site` to visit MailHog.
-## BrowserSync
- Add following options to your Browsersync script:
-``` 
-"browserSyncOptions": {
-    "proxy": "https://wp-{project}.lndo.site",
-    "port": 80,
-    "SSL": true,
-    "open": false,
-    "notify": false
-},
-```
+1. Open /.lando.yml with a text editor.
+2. Change the `name` value to your new project name (replace 'lando-wordpress-env' with new project name).
 
-## Documentation
-Refer to Lando's extensive [documentation](https://docs.lando.de).
+## Environment Start
+
+Start: `lando start`  
+Rebuild: `lando rebuild`
+
+Note: Rebuild after any changes to .lando.yml.
+
+## Container Access
+
+Containers created:
+
+`appserver` - PHP  
+`appserver_nginx` - NGINX  
+`database` - MySQL  
+`node` - NodeJS
+`mailhog` - MailHog local email server  
+`pma` - phpMyAdmin
+
+### Appserver
+
+SSH: `lando ssh`
+
+### Database
+
+Database credentials may be retreived by `lando info`.
+
+To connect via client such as SequelPro or TablesPlus use the following:
+
+Host: 127.0.0.1
+Username: wordpress
+Password: wordpress
+Database: wordpress
+Port: (use `lando info` and get the port number listed under 'external_connection' for the database server )
+
+To access MySQL Directly follow these steps:
+
+SSH: `lando ssh -s database`  
+Connect: `mysql -h localhost -u wordpress -pwordpress wordpress`
